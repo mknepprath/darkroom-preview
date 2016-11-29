@@ -1,0 +1,22 @@
+{
+  "manifest_version": 2,
+
+  "name": "Darkroom Preview",
+  "version": "0.0.0.1",
+  "description": "Preview images in Chrome with a black background and centered.",
+  "icons": { "16": "icon.png",
+           "48": "icon.png",
+          "128": "icon.png" },
+
+  "browser_action": {
+    "default_icon": "icon.png",
+    "default_title": "Darkroom Preview"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["file:///*/*"],
+      "css": ["styles.css"]
+    }
+  ]
+}
